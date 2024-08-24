@@ -29,22 +29,26 @@ X=np.array(eval(input()))
 Y=np.array(eval(input()))
 Xmean=np.mean(X)
 Ymean=np.mean(Y)
-num,den=0,0 # num = numerator, den = denomenator
+num,den=0,0
 for i in range(len(X)):
   num+=(X[i]-Xmean)*(Y[i]-Ymean)
   den+=(X[i]-Xmean)**2
 m=num/den
+print("Slope")
+print(m)
 c=Ymean-m*Xmean
-print(m,c)
+print("Y-Intercept")
+print(c)
 Y_pred=m*X+c
 print(Y_pred)
-plt.scatter(X,Y)
-plt.plot(X,Y_pred,color="red")
+plt.scatter(X,Y,color='pink')
+plt.plot(X,Y_pred,color="black")
 plt.show()
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/a4703a99-237f-491b-9f22-3fe2f5e1d415)
+![image](https://github.com/user-attachments/assets/47e0477c-fbf8-4e61-a740-f1cc725df34d)
+
 
 
 ## Result:
