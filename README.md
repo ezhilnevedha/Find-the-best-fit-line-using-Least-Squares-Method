@@ -40,6 +40,7 @@ c=Ymean-m*Xmean
 print("Y-Intercept")
 print(c)
 Y_pred=m*X+c
+print("Y-predicted")
 print(Y_pred)
 plt.scatter(X,Y,color='pink')
 plt.plot(X,Y_pred,color="black")
@@ -47,7 +48,8 @@ plt.show()
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/47e0477c-fbf8-4e61-a740-f1cc725df34d)
+![image](https://github.com/user-attachments/assets/1ffac36b-2afe-43cf-ba23-ed949baaa34b)
+
 
 
 
